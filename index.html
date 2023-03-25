@@ -21,10 +21,11 @@
     <div class="container page-container">
       <nav class="header-nav">
         <a href="./index.html" class="logotype"><span class="logo">Web</span><span>Studio</span></a>
+
         <ul class="site-menu">
-          <li class="nav-inner"><a href="" class="nav-site link">Studio</a></li>
-          <li class="nav-inner"><a href="./portfolio.html" class="nav-site link">Portfolio</a></li>
-          <li class="nav-inner"><a href="" class="nav-site link">Contacts</a></li>
+          <li class="nav-inner"><a href="#" class="nav-site current">Studio</a></li>
+          <li class="nav-inner"><a href="./portfolio.html" class="nav-site">Portfolio</a></li>
+          <li class="nav-inner"><a href="#" class="nav-site">Contacts</a></li>
         </ul>
       </nav>
       <address class="address">
@@ -48,7 +49,7 @@
       <div class="container hero-container">
         <h1 class="header-title">Effective Solutions for Your Business</h1>
         <div class="button-container">
-          <button type="button" class="hearo-btn">Order Service</button>
+          <button data-modal-open type="button" class="hearo-btn">Order Service</button>
         </div>
       </div>
     </section>
@@ -370,6 +371,18 @@
       </div>
     </div>
   </footer>
+
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button data-modal-close type="button" class="modal-close-btn">
+        <svg class="modal-icon-close" width="8" height="8">
+          <use href="./images/close.svg#icon-close-icon"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <script src="./js/modal.js.html"></script>
 </body>
 
 </html>
