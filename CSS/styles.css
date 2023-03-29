@@ -394,7 +394,9 @@ img {
 }
 
 .buttons-nav {
-	transition: background, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition-property: background-color, box-shadow, color, border-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	background: #f4f4fd;
 	cursor: pointer;
 	border: 1px solid #e7e9fc;
@@ -644,7 +646,7 @@ img {
 
 /* modal */
 
-.backdrop {
+.backdrop {	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	position: fixed;
 	top: 0;
 	left: 0;
